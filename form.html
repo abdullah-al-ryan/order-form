@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tourney:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <style>
+        #header
+        {
+            text-align: center;
+            font-family: 'Zen Tokyo Zoo', cursive;
+        }
+        body
+        {
+            margin: 0 2%;
+            font-family: 'Montserrat', sans-serif;
+            
+        }
+        legend
+        {
+            text-align: center;
+            font-family: 'Tourney', cursive;
+        }
+        .field
+        {
+            margin: 2% 0;
+        }
+        .part
+        {
+            padding-bottom: 5px;
+        }
+        #flavour ,#submit, #writing
+        {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <header id="header">
+        <h1>Lorem Cake Shop</h1>
+        <hr>
+    </header>
+
+    <section>
+        <fieldset class="field">
+            <legend>Order your Cake</legend>
+            <article class="part">
+                <h3>Size of the Cake:</h3>
+                <p>
+                    <label for="Round Cake 6""><input type="radio" id="Round Cake 6"">Round Cake 6"</label>
+                </p>
+
+                <p>
+                    <label for="Round Cake 8""><input type="radio" id="Round Cake 8"">Round Cake 8"</label>
+                </p>
+
+                <p>
+                    <label for="Round Cake 10""><input type="radio" id="Round Cake 10"">Round Cake 10"</label>
+                </p>
+
+                <p>
+                    <label for="Round Cake 12""><input type="radio" id="Round Cake 12"">Round Cake 12"</label>
+                </p>
+            </article>
+
+            <article class="part">
+                <h3>Select Flavour:</h3>
+                <label for="flavour" id="flavour">Choose a flavour:</label>
+            
+                <select id="flavour">
+                    <option value="Chocolate">Chocolate</option>
+                    <option value="Strawberry">Strawberry</option>
+                    <option value="Creamy Cheese">Creamy Cheese</option>
+                    <option value="Vanilla">Vanilla</option>
+                </select>
+            </article>
+
+            <article>
+                   <p>Cake writing:
+                    <input type="file" name="" id="writing"></p> 
+            </article>
+            
+            <article>
+                <h3>Fillings:</h3>
+                <p>
+                    <label for="Lemon"><input type="checkbox" name="" id="Lemon">Lemon</label>
+                </p>
+
+                <p>
+                    <label for="Custard"><input type="checkbox" name="" id="Custard">Custard</label>
+                </p>
+
+                <p>
+                    <label for="Pineapple"><input type="checkbox" name="" id="Pineapple">Pineapple</label>
+                </p> 
+            </article>
+
+            <article>
+                <h3>Event Date:</h3>
+                <p>Event Date: <input type="date" name="" id="date"></p>
+            </article>
+
+            <article>
+                <p><input type="checkbox" name="" id="terms">I agree to the <a href="form.html">terms & conditions</a> </p>
+            </article>
+        </fieldset>
+
+        <fieldset class="field">
+            <legend>Contact Details</legend>
+            <p>Name: <input type="t" name="" id="name" placeholder="Enter Your Name"></p>
+
+            <p>Address:
+                <textarea name="Enter Your Address" id="" cols="20" rows="5" placeholder="Enter Your Address"></textarea> 
+            </p>
+
+            <p>
+                Phone: <input type="number" name="" id="">
+            </p>
+
+            <p>Email: <input type="t" name="" id="name" placeholder="Enter Your E-mail"></p>
+
+        </fieldset>
+    </section>
+
+    <input type="submit" value="Submit" id="submit">
+</body>
+</html>
